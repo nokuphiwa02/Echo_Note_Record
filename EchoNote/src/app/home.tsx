@@ -1,12 +1,14 @@
 import { View, StyleSheet } from "react-native";
 import Header from "../components/Header";
 import Welcome from "@/components/Welcome";
+import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Header />
       <Welcome/>
+      <SearchBar/>
     </View>
   );
 }
