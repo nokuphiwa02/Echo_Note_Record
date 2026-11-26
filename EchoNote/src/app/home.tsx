@@ -2,6 +2,7 @@ import { View, StyleSheet } from "react-native";
 import Header from "../components/Header";
 import Welcome from "@/components/Welcome";
 import SearchBar from "@/components/SearchBar";
+import VoiceNoteCard from "@/components/VoiceNoteCard";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Welcome/>
       <SearchBar/>
+      <VoiceNoteCard/>
     </View>
   );
 }
