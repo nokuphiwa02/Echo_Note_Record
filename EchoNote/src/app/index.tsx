@@ -1,9 +1,13 @@
-import { Text, View, StyleSheet } from "react-native";
+
+import { View, StyleSheet, ScrollView } from "react-native";
+import Home from "../app/home";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <ScrollView contentContainerStyle={styles.scrollView}>
+        <Home/>
+      </ScrollView>
     </View>
   );
 }
@@ -11,7 +15,13 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#10111B",
+  },
+
+  scrollView: {
+    gap: 15,
+    paddingHorizontal: 20,
+    paddingTop: 60,
+    paddingBottom: 30,
   },
 });
